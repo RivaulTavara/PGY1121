@@ -1,15 +1,20 @@
 import os
 os.system("color a")
 vLogin = 1
+print("LOGIN")
 vNombre=str(input("Ingrese su nombre de usuario: "))
 while vLogin == 1:
-    os.system("cls")
+    print("LOGIN")
     vPassword = str(input("Ingrese su contraseña: "))
     if vPassword == "ZTM":
-        input("Programa Iniciado:\n")
+        os.system("cls") 
+        input("Programa Iniciado \n")
         vLogin = 0      
     else:
-        input("Clave Incorrecta: \n")   
+        os.system("cls") 
+        print("ERROR")
+        input("Clave Incorrecta: \n")
+        os.system("cls")  
 print("=========================")
 print(f"\nBienvenido {vNombre}\n")
 print("=========================")
